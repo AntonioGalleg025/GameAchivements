@@ -36,8 +36,3 @@ GameAchievements implementa una solución para gestionar la emisión y visualiza
 
 ### Despliegue:
 - **GitHub Pages** para alojar la aplicación web de forma gratuita.
-
----
-
-## 📂 Estructura del proyecto
-
