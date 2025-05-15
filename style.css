@@ -1,0 +1,338 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+#pico {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.estilomint {
+  padding: 6%;
+  display: flex;          /* Flex para alinear los hijos */
+  align-items: center;    /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente si lo deseas */
+  width: 100%;
+}
+
+.container {
+  background-color: #1a1a1a;
+  padding: 70px;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+
+
+.secundario{
+  color:#888;
+}
+
+.primario{
+  color:blueviolet
+}
+
+.primario-s{
+  color:rgb(181, 139, 219)
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 100px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button {
+  margin-top: 19px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+section {
+  margin-top: 30px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: #ccc;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #888;
+}
+
+#status {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.status-success {
+  color: #4caf50;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.status-error {
+  color: #f44336;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Balance */
+.balance-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#balanceList {
+  list-style-type: none;
+  padding-left: 0;
+  color: #ccc;
+  font-size: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#balanceList li {
+  padding: 6px 10px;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.3s;
+}
+
+#balanceList li:hover {
+  background-color: #444;
+  color: #fff;
+  cursor: default;
+}
+
+/* Nueva sección para el balance de Sepolia */
+#sepoliaBalance {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Nuevas animaciones de transición */
+input,
+select {
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #888;
+}
+
+button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+}
+
+#status {
+  font-size: 14px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+#status.success {
+  color: green;
+}
+
+#status.error {
+  color: red;
+}
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #f0f0f0;
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1.5rem 2rem;
+  background: #0f3460;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  color: #e94560;
+}
+
+#connectButton {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #e94560;
+  border: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  color: white;
+}
+
+#connectButton:hover {
+  background: #d63447;
+}
+
+main.container {
+  flex-grow: 1;
+  max-width: 720px;
+  margin: 2rem auto 3rem;
+  padding: 1rem 1.5rem;
+  background: #16213e;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+h2.section-title {
+  color: #e94560;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+label {
+  font-weight: 600;
+  color: #ccc;
+}
+
+input.form-control,
+select.form-select {
+  background: #0f3460;
+  border: none;
+  color: #f0f0f0;
+  font-weight: 500;
+  transition: box-shadow 0.3s ease;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+}
+
+input.form-control:focus,
+select.form-select:focus {
+  outline: none;
+  box-shadow: 0 0 8px #e94560;
+  background: #16213e;
+}
+
+button.btn-primary {
+  background: #e94560;
+  border: none;
+  font-weight: 700;
+  padding: 0.6rem 2rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+  background: #d63447;
+}
+
+#status {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+#status.error {
+  color: #ff4c4c;
+}
+
+#status.success {
+  color: #4caf50;
+}
+
+pre#balance {
+  background: #0f3460;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #f0f0f0;
+  min-height: 100px;
+  margin-top: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #777;
+  background: #0f3460;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  button#connectButton {
+    width: 100%;
+    margin-top: 0.8rem;
+  }
+}
