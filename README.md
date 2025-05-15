@@ -1,102 +1,43 @@
-# Certificados ONG - Blockchain con ERC-1155
+# GameAchievements - Sistema de Logros en Blockchain con ERC-1155
 
-Este proyecto tiene como objetivo la creación y despliegue de un sistema basado en **blockchain** para la emisión de certificados en formato **token ERC-1155** para una ONG. Los voluntarios reciben certificados por su participación en actividades de la ONG a través de **tokens no fungibles (NFTs)**.
+Este proyecto tiene como objetivo la creación y despliegue de un sistema basado en **blockchain** para la emisión de logros (achievements) en formato **token ERC-1155** para juegos u otras aplicaciones. Los jugadores reciben logros como **tokens no fungibles (NFTs)** que representan hitos alcanzados en un juego.
 
 ---
 
 ## 📖 Descripción
 
-Este proyecto busca implementar una solución para gestionar la emisión de certificados en formato token, utilizando la tecnología de **blockchain**. Los certificados representan la participación de los voluntarios en actividades de la ONG, y cada certificado es un token ERC-1155. La solución incluye:
-- Un contrato inteligente en la red **Sepolia**.
-- Una interfaz web interactiva que permite la conexión con **MetaMask** para interactuar con la blockchain y emitir certificados.
+GameAchievements implementa una solución para gestionar la emisión y visualización de logros digitales utilizando tecnología blockchain. Cada logro es un token ERC-1155 que puede ser acuñado, transferido y verificado fácilmente. La solución consta de:
+
+- Un contrato inteligente desplegado en la red de prueba **Sepolia**.
+- Una interfaz web interactiva que permite la conexión con **MetaMask** para interactuar con el contrato y mintear logros.
+- Visualización del saldo de ETH en Sepolia y de los tokens obtenidos.
 
 ---
 
-## 🚀 Características
+## 🚀 Características principales
 
-- **Emisión de certificados:** Los administradores de la ONG pueden emitir certificados (tokens ERC-1155) a los voluntarios.
-- **Visualización de saldo:** Los usuarios pueden consultar su saldo de **Sepolia (ETH)** y los tokens que han recibido.
-- **Interacción con MetaMask:** Los usuarios pueden conectarse a la **testnet Sepolia** a través de **MetaMask**.
-- **Despliegue público:** El sistema está disponible públicamente en **GitHub Pages**.
+- **Emisión de logros:** Los administradores pueden mintear logros (tokens ERC-1155) para los jugadores.
+- **Consulta de saldos:** Los usuarios pueden consultar su saldo de ETH en Sepolia y la cantidad de tokens de cada logro que poseen.
+- **Interacción con MetaMask:** La web se conecta fácilmente con MetaMask para firmar transacciones y consultar datos en blockchain.
+- **Despliegue público:** La interfaz web puede ser desplegada en servicios como GitHub Pages para fácil acceso.
 
 ---
 
-## 🛠️ Tecnologías utilizadas
-
-El proyecto utiliza las siguientes tecnologías:
+## 🛠️ Tecnologías usadas
 
 ### Frontend:
-- **HTML5:** Para la estructura de la web.
-- **CSS3:** Para el diseño y presentación.
-- **JavaScript:** Para la lógica y la interacción con la blockchain mediante **ethers.js**.
+- **HTML5**, **CSS3** y **Bootstrap 5** para diseño responsivo y moderno.
+- **JavaScript** con **ethers.js** para la comunicación con la blockchain.
 
 ### Blockchain:
-- **Ethereum (Sepolia)**: Red de blockchain utilizada para el contrato inteligente.
-- **Solidity:** Lenguaje de programación utilizado para desarrollar el contrato inteligente ERC-1155.
-- **MetaMask**: Billetera de Ethereum para interactuar con el contrato desplegado en Sepolia.
+- **Ethereum Sepolia Testnet** como red de despliegue.
+- **Solidity** para desarrollo del contrato inteligente ERC-1155.
+- **MetaMask** para gestión de cuentas y firma de transacciones.
 
 ### Despliegue:
-- **GitHub Pages**: Para el despliegue de la aplicación web.
+- **GitHub Pages** para alojar la aplicación web de forma gratuita.
 
 ---
 
 ## 📂 Estructura del proyecto
-Certificados-ONG/
 
-├── contracts/ # Contratos inteligentes (Solidity)
-
-│ └── Token.sol # Contrato ERC-1155
-
-├── index.html # Página principal de la WebApp
-
-├── script.js # Lógica JavaScript para interactuar con el contrato
-
-├── style.css # Estilos CSS
-
-├── README.md # Documentación del proyecto
-
-└── .gitignore # Archivos y directorios a ignorar por git
-
----
-
-### Explicación:
-- **contracts/**: Contiene el contrato inteligente desarrollado en **Solidity**.
-  - **Token.sol**: El contrato inteligente que gestiona la emisión de certificados en forma de tokens ERC-1155.
-- **index.html**: La página principal de la WebApp.
-- **script.js**: Código JavaScript que interactúa con el contrato inteligente en la blockchain.
-- **style.css**: Los estilos CSS de la interfaz de la web.
-- **README.md**: Este archivo de documentación.
-- **.gitignore**: Archivos y directorios que deben ser ignorados por Git.
-
----
-
-## 📋 Requisitos previos
-
-Para ejecutar este proyecto, necesitarás tener instalado:
-
-- **Node.js** (versión 14 o superior)
-- **npm** o **yarn**
-- **Remix** o **Hardhat** (para compilar y desplegar contratos inteligentes)
-- **MetaMask** para interactuar con la red de Sepolia
-
----
-
-## 🚀 Instalación y ejecución
-
-Sigue los pasos a continuación para instalar y ejecutar el proyecto en tu máquina local:
-
-1. **Clona este repositorio:**
-   ```bash
-   git clone https://github.com/rodrigocrem/Blockchain.git
-   cd Blockchain
-2. **Instala las dependencias:**
-   npm install.
-3. **Desplegar el contrato en sepolia:**
-   Usa Remix o cualquier herramienta de desarrollo de Ethereum para desplegar el contrato en Sepolia.
-4. **Des`legar la Web en GitHub Pages:**
-   Sube el contenido del directorio public/ a GitHub y configura GitHub Pages para servir la web desde la rama main.
----
-
-## 📝 Licencia:
-
-Este proyecto está bajo la Licencia MIT.
